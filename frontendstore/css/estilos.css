@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+51,a849a3+100 */
+background: #e570e7; /* Old browsers */
+background: -moz-linear-gradient(top, #e570e7 0%, #c85ec7 51%, #a849a3 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #e570e7 0%,#c85ec7 51%,#a849a3 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #e570e7 0%,#c85ec7 51%,#a849a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=0 ); /* IE6-9 */
+    background-attachment: fixed;
+}
+
+/* Utilidades */
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+img{
+    max-width: 100%;
+}
+
+/* header */
+
+.logo{
+    text-align: center;
+}
+.img-main{
+    width: 100%;
+}
+
+
+/* main */ 
+.main h2{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.contenido-main ul{
+    list-style: none;
+   
+}
+.contenido-main ul{
+    display: grid;
+    margin-right: 0;
+}
+@media (min-width: 480px) {
+    .contenido-main ul{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+    }
+}
+@media (min-width: 768px) {
+    .contenido-main ul{
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        width: 95%;
+    }
+}
+.contenido-main ul img {
+    margin-top: 30px;
+}
+.contenido-main ul li img{
+    border: 10px solid rgba(128, 1, 195, .45) ;
+    transition: border-color .3s ease-in-out;
+}
+.contenido-main ul li img:hover{
+      border: 10px solid rgba(128, 1, 195, 1) ;
+}
+
+.contenido-ul li{
+    text-align: center;
+}
+.contenido-ul li p{
+     font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+.contenido-ul li span{
+    color:#FFCE00;
+    font-size: 39px;
+}
+
+.boton{
+    display: inline-block;
+    background-color: #FFCE00;
+    margin-top: 10px;
+    padding: 10px 45px;
+    transition: background-color .3s ease-in-out;
+}
+.boton a{
+    text-decoration: none;
+    color: #8001c3;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.boton:hover{
+    background-color: #b4920c;
+}
